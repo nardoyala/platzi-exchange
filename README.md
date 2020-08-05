@@ -1,4 +1,12 @@
-# platzi-exchange
+# í²± Platzi Exchange
+
+This is the final project for the [Basic Vue.js Course](https://platzi.com/clases/vuejs/) at [Platzi](https://platzi.com).
+
+## Demo
+
+ You can have a look on [https://nardoyala-platzi-exchange.netlify.app/](https://nardoyala-platzi-exchange.netlify.app/)
+
+![Screenshot](https://raw.githubusercontent.com/nardoyala/platzi-exchange/master/images/screenshot.png)
 
 ## Project setup
 ```
