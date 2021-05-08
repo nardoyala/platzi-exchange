@@ -32,9 +32,7 @@
         <td>
           <img
             class="h-6 w-6"
-            :src="
-              `https://static.coincap.io/assets/icons/${a.symbol.toLowerCase()}@2x.png`
-            "
+            :src="`https://static.coincap.io/assets/icons/${a.symbol.toLowerCase()}@2x.png`"
             :alt="a.name"
           />
         </td>
@@ -81,15 +79,15 @@ export default {
   data() {
     return {
       filter: "",
-      sortOrder: 1
+      sortOrder: 1,
     }
   },
 
   props: {
     assets: {
       type: Array,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
 
   computed: {
@@ -98,7 +96,7 @@ export default {
 
       return this.assets
         .filter(
-          a =>
+          (a) =>
             a.symbol.toLowerCase().includes(this.filter.toLowerCase()) ||
             a.name.toLowerCase().includes(this.filter.toLowerCase())
         )
@@ -109,7 +107,7 @@ export default {
 
           return altOrder
         })
-    }
+    },
   },
 
   methods: {
@@ -118,8 +116,8 @@ export default {
     },
     changeSortOrder() {
       this.sortOrder = this.sortOrder === 1 ? -1 : 1
-    }
-  }
+    },
+  },
 }
 </script>
 

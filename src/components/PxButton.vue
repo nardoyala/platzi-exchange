@@ -17,15 +17,15 @@ export default {
   props: {
     isLoading: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
 
   methods: {
     buttonClick() {
       this.$emit("click")
-    }
-  }
+    },
+  },
 }
 </script>
 
